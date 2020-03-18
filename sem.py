@@ -73,7 +73,7 @@ def main(load_data=False):
         up_table = cmp.compute_up_messages(data, tree, jc)
         ll_sites, true_ll = cmp.compute_loglikelihood(up_table, jc.stat_prob)
 
-    T_l, ll_vec = sem(data, jc, False)
+    T_l, ll_vec = sem(data, jc, True)
     plot.plot_loglikelihood(ll_vec, true_ll)
 
 
