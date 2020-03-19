@@ -82,7 +82,7 @@ def compute_loglikelihood(up_table, stat_prob):
     return ll_sites, log_likelihood
 
 
-def compute_w_ij(S_ij, trans_matrix, stat_prob, sigma=1.):
+def compute_w_ij(S_ij, trans_matrix, stat_prob):
     # Computes L_{local} as in SEM paper, i.e. an entry in W matrix.
     # S_ij and trans_matrix (parameterized by t) are a 4x4 matrices. stat_prob is a vector of stationary probs.
     n_states = S_ij.shape[0]
